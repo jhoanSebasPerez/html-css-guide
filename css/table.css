@@ -62,7 +62,11 @@ tr:nth-child(even){
 }
 
 .btn-cta{
-    padding: 24px;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:#44c767;
     border-radius: 50%;
     cursor: pointer;
@@ -81,4 +85,19 @@ tr:nth-child(even){
     cursor: pointer;
     text-decoration: none;
     color: white;
+}
+
+@media (320px <= width <= 768px){
+    .container{
+        overflow-x: scroll;
+    }
+
+    .form-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-input{
+        flex-direction: column;
+    }
 }
